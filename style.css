@@ -70,13 +70,71 @@ footer ul li{
 
 .start-link{
     border-radius: 5px;
+    border: 0.0001px solid rgba(255, 255, 255, 0.1);
     padding: 8px 16px;
-    background-color: rgb(150, 150, 189);
-    color: #222;
+    background-color: white;
+    color: rgb(100, 100, 150);
 }
 
 .start-link:hover{
     background-color: rgb(100, 100, 150);
     color: white;
     transition: 0.3s;
+}
+
+.todo-content{
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(165, 158, 158);
+    padding: 2em 2em;
+}
+
+#task-form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+#task-form input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+#task-form button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.0001px solid rgba(255, 255, 255, 0.1);
+    color: #222;
+    font-weight: bold;
+}
+
+#task-form button:hover{
+    background-color: rgb(100, 100, 150);
+    color: white;
+    transition: 0.3s;
+}
+
+#task-form button:active{
+    transform: scale(0.98);
+    transition: 0.1s;
+    color: #000;
+}
+
+#task-form button:focus{
+    outline: none;
+}
+
+#task-form select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#task-form select option{
+    border-radius: 5px;
 }
