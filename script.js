@@ -3,9 +3,6 @@ const textBox = document.getElementById('textBox');
 const category = document.getElementById('category');
 const taskList = document.getElementById('task-list');
 
-
-
-
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 function renderTasks() {
@@ -15,7 +12,7 @@ function renderTasks() {
     li.className = task.completed ? 'completed' : '';
     li.innerHTML = `
       <span>[${task.category}] ${task.text}</span>
-      <div>
+      <div class="task-buttons">
         <button onclick="toggleComplete(${index})">✔</button>
         <button onclick="editTask(${index})">✏</button>
         <button onclick="deleteTask(${index})">🗑</button>
